@@ -8,7 +8,9 @@ function List(){
 
   fruits.sort();
   
-  const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}</li>);
+  const listItems = fruits.map(fruit => <li key={fruit.id}>
+                                          {fruit.name}: &nbsp;
+                                          {fruit.calories}</li>);
 
   return(<ol>{listItems}</ol>);
 }
