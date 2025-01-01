@@ -8,7 +8,8 @@ function List() {
   ];
 
   //                  fruits.sort((a, b) => a.name.localeCompare(b.name)); //alphabetic
-  fruits.sort((a, b) => b.name.localeCompare(a.name)); //reverse order
+  //fruits.sort((a, b) => b.name.localeCompare(a.name)); //reverse order
+  fruits.sort((a, b) => a.calories - b.calories);
 
   const listItems = fruits.map((fruit) => (
     <li key={fruit.id}>
