@@ -14,10 +14,10 @@ function List() {
 
   const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
 
-  const listItems = lowCalFruits.map((fruit) => (
-    <li key={fruit.id}>
-      {fruit.name}: &nbsp;
-      {fruit.calories}
+  const listItems = lowCalFruits.map((lowCalFruit) => (
+    <li key={lowCalFruit.id}>
+      {lowCalFruit.name}: &nbsp;
+      {lowCalFruit.calories}
     </li>
   ));
 
