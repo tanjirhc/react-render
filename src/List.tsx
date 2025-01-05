@@ -15,4 +15,8 @@ function List(props) {
     </>
   );
 }
+List.defaultProps = {
+  category: "Category",
+
+}
 export default List;
